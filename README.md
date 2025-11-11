@@ -33,7 +33,7 @@ It will be stored locally and can be recreated later once training is completed.
 
 Sustainability × AI/ML — Promoting responsible waste segregation using artificial intelligence.
 
-## 📅 Week 2 Updates
+ # Week 2 Updates
 - Enhanced CNN architecture with additional convolution blocks.
 - Added Batch Normalization and Dropout layers.
 - Implemented Data Augmentation to reduce overfitting.
