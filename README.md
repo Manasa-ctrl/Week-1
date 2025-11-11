@@ -27,6 +27,15 @@ NumPy, Matplotlib
 
 # Model File
 
+## 📅 Week 2 Updates
+- Enhanced CNN architecture with additional convolution blocks.
+- Added Batch Normalization and Dropout layers.
+- Implemented Data Augmentation to reduce overfitting.
+- Added Early Stopping, Learning-Rate Scheduling, and Model Checkpointing.
+- Generated confusion matrix and classification report.
+- Observed validation accuracy around 17 % (model still under training).
+- Plan to improve further in Week 3 using Transfer Learning.
+
 The trained model (waste_classifier.h5) was not uploaded because of GitHub’s 25 MB file size limit.
 It will be stored locally and can be recreated later once training is completed.
 
