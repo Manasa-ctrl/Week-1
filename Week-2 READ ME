@@ -1,8 +1,0 @@
-## 📅 Week 2 Updates
-- Enhanced CNN architecture with additional convolution blocks.
-- Added Batch Normalization and Dropout layers.
-- Implemented Data Augmentation to reduce overfitting.
-- Added Early Stopping, Learning-Rate Scheduling, and Model Checkpointing.
-- Generated confusion matrix and classification report.
-- Observed validation accuracy around 17 % (model still under training).
-- Plan to improve further in Week 3 using Transfer Learning.
