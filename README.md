@@ -26,6 +26,12 @@ TensorFlow / Keras
 NumPy, Matplotlib
 
 # Model File
+The trained model (waste_classifier.h5) was not uploaded because of GitHub’s 25 MB file size limit.
+It will be stored locally and can be recreated later once training is completed.
+
+# Project Theme
+
+Sustainability × AI/ML — Promoting responsible waste segregation using artificial intelligence.
 
 ## 📅 Week 2 Updates
 - Enhanced CNN architecture with additional convolution blocks.
@@ -36,9 +42,3 @@ NumPy, Matplotlib
 - Observed validation accuracy around 17 % (model still under training).
 - Plan to improve further in Week 3 using Transfer Learning.
 
-The trained model (waste_classifier.h5) was not uploaded because of GitHub’s 25 MB file size limit.
-It will be stored locally and can be recreated later once training is completed.
-
-# Project Theme
-
-Sustainability × AI/ML — Promoting responsible waste segregation using artificial intelligence.
