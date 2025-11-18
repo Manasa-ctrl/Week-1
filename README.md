@@ -42,13 +42,13 @@ Sustainability × AI/ML — Promoting responsible waste segregation using artifi
 - Observed validation accuracy around 17 % (model still under training).
 - Plan to improve further in Week 3 using Transfer Learning.
 
-Waste Classification Using Deep Learning (ResNet50 – Fine-Tuned)
+# Waste Classification Using Deep Learning (ResNet50 – Fine-Tuned)
 1. Project Overview
 The goal of this project is to build an accurate image classification model for different categories of waste, supporting automated and sustainable waste management systems.
 Initial attempts using basic CNNs and MobileNet architectures resulted in low accuracy. Therefore, the project progressed toward a more advanced approach using ResNet50 with transfer learning and fine-tuning, which significantly improved the results.
 The final model achieves approximately 97% accuracy across 12 waste categories, after applying multiple improvements in data handling, model architecture, and training methods.
 
-2. Dataset Used
+# 2. Dataset Used
 Dataset Name: Garbage Classification Dataset (Kaggle)
 The dataset contains images belonging to the following 12 classes:
 battery
@@ -70,7 +70,7 @@ A proper stratified split was created with:
 20% validation data
 This corrected split is one of the major reasons for improved accuracy.
 
-3. Key Improvements Implemented
+# 3. Key Improvements Implemented
 3.1 Transfer Learning with ResNet50
 Used a pretrained ResNet50 model trained on ImageNet.
 Removed the original classification layers.
@@ -99,21 +99,20 @@ Shear transformations
 3.4 Correct Train–Validation Split
 Previous low accuracy (~15–20%) was caused by an incorrect or imbalanced dataset split.
 After reconstructing the dataset into class-balanced training and validation folders, the model performance improved dramatically.
+
 3.5 Training Callbacks
-
-
 EarlyStopping to avoid overfitting
 ModelCheckpoint to save the best-performing model
 ReduceLROnPlateau to adjust learning rate automatically
 
-4. Final Results After All Improvements
+# 4. Final Results After All Improvements
 MetricScoreOverall Accuracy97%Macro F1 Score0.96Weighted F1 Score0.97
 Observations
 Almost all classes achieved high precision and recall.
 The model performs significantly better after fine-tuning.
 The corrected dataset split had a major impact on overall performance.
 
-5. Prediction Example
+# 5. Prediction Example
 import tensorflow as tf
 import numpy as np
 from tensorflow.keras.preprocessing import image
@@ -131,7 +130,7 @@ pred = model.predict(img)
 print("Predicted class:", class_names[np.argmax(pred)])
 
 
-6. Project Structure
+# 6. Project Structure
 project/
 │
 ├── garbage_resnet50_finetuned.h5        # Final trained model
@@ -141,7 +140,7 @@ project/
 └── requirements.txt                      # Python dependencies
 
 
-7. Conclusion
+# 7. Conclusion
 This project demonstrates how advanced deep learning techniques such as transfer learning, fine-tuning, proper dataset preparation, and augmentation can drastically improve classification performance.
 The model progressed from approximately 15% accuracy to 97% accuracy, proving the importance of both high-quality data handling and the use of robust pretrained architectures like ResNet50.
 
